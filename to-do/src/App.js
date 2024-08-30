@@ -31,17 +31,20 @@ function App() {
     <>
       <main className="container">
         <h1>To-Do</h1>
+        
         <Form
           tasks={tasks}
           setTasks={setTasks}
           updateLocalStorage={updateLocalStorage}
         />
+
         <Tasks
           tasks={tasks}
           setTasks={setTasks}
           setTotalDeTasksCompletas={setTotalDeTasksCompletas}
           updateLocalStorage={updateLocalStorage}
         />
+
       </main>
       <h3 className="tasks__completas">{`Total de tasks: ${tasks.length}`}</h3>
       <h3 className="tasks__completas">

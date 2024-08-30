@@ -15,11 +15,13 @@ function App() {
       if (tasks.length === 0) {
         return tasks.filter((task) => task.completa).length.toFixed(2);
       }
+
       return (
         (tasks.filter((task) => task.completa).length / tasks.length) *
         100
       ).toFixed(2);
     };
+
     setTotalDeTasksCompletas(tasksCompletas);
   }, [tasks]);
 
@@ -36,6 +38,7 @@ function App() {
           setTasks={setTasks}
           updateLocalStorage={updateLocalStorage}
         />
+        
         <Tasks
           tasks={tasks}
           setTasks={setTasks}
