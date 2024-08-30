@@ -1,8 +1,12 @@
 import Form from "./components/Form";
 import "./styles/global.css";
+
 import "./App.css";
+
 import Tasks from "./components/Tasks";
+
 import { useEffect, useState } from "react";
+
 
 function App() {
   const [tasks, setTasks] = useState(
